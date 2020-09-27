@@ -16,12 +16,12 @@ const generateProjects = projectsArr => {
     return `
         <section class="my-3" id="portfolio">
             <h2 class="text-dark bg-primary p-2 display-inline-block">Work</h2>
-            <div class="flex-row justify-speace-between">
+            <div class="flex-row justify-space-between">
             ${projectsArr
                 .filter(({ feature }) => feature)
                 .map(({ name, description, languages, link }) => {
                     return `
-                        <div class="col-12 mb-2 bg-dark text-light p-3">
+                        <div class="col-12 mb-2 bg-dark text-light p-3 flex-column">
                             <h3 class="portfolio-item-title text-light">${name}</h3>
                             <h5 class="portfolio-languages">
                                 Built With: 
